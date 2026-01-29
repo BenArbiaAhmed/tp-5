@@ -3,6 +3,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace tp_5.Data;
 
-public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : IdentityDbContext(options)
+public class AppDbContext : IdentityDbContext
 {
+    public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
+    {
+    }
 }
